@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #Div1 {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+        }
+        #Div2 {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+        }
+        #Div3 {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+        }
+    </style>
+    <title>BigPipe Example </title>
+</head>
+<body>
+
+    <h1>BigPipe Example</h1>
+
+    <div id="Div1">
+        <p>Software Architecture</p>
+    </div>
+    <div id="Div2">
+        <p>BigPipe</p>
+    </div>
+    <div id="Div3">
+        <p>First page</p>
+    </div>
+
+    <script>
+        const delay = 5000;
+
+        function showDiv1() {
+            const Div1 = document.getElementById('Div1');
+            Div1.style.display = 'block';
+        }
+        setTimeout(function () {
+            setTimeout(function () {
+                showDiv1();
+            }, delay);
+        }, 0);
+        function showDiv2() {
+            const Div2 = document.getElementById('Div2');
+            Div2.style.display = 'block';
+        }
+        setTimeout(function () {
+            setTimeout(function () {
+                showDiv2();
+            }, delay);
+        }, 0);
+    
+        function showDiv3() {
+            const Div3 = document.getElementById('Div3');
+            Div3.style.display = 'block';
+        }
+        setTimeout(function () {
+            setTimeout(function () {
+                showDiv3();
+            }, delay);
+        }, 0);
+    </script>
+
+</body>
+</html>
